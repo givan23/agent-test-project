@@ -1,23 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
+import twitterIcon from "./assets/twitter-icon.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="app">
+      <div id="twitter-card" className="twitterCard">
+        <img src={twitterIcon} alt="Twitter icon" className="twitterIcon" />
+        <h1 className="twitterTitle">TWITTER</h1>
+        <p className="twitterDescription">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          ullam aliquid non eligendi, nemo est neque reiciendis error?
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <button className="twitterButton">READ MORE</button>
+      </div>
     </div>
   );
 }

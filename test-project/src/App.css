@@ -1,38 +1,44 @@
-.App {
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efefef;
+}
+
+.twitterCard {
+  width: 260px;
+  padding: 24px 20px 28px;
+  border: 2px solid #222;
+  background: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.twitterIcon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.twitterTitle {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.twitterDescription {
+  margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.twitterButton {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 16px;
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
 }
