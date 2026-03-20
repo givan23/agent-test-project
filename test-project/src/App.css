@@ -1,38 +1,51 @@
 .app {
   min-height: 100vh;
+  padding: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #efefef;
+  box-sizing: border-box;
 }
 
-.twitterCard {
+.cardsContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.socialCard {
   width: 260px;
   padding: 24px 20px 28px;
   border: 2px solid #222;
   background: #fff;
   text-align: center;
+  box-sizing: border-box;
 }
 
-.twitterIcon {
+.socialIcon {
   width: 72px;
   height: 72px;
   margin-bottom: 12px;
 }
 
-.twitterTitle {
+.socialTitle {
   margin: 0 0 16px;
   font-size: 32px;
   font-weight: 700;
 }
 
-.twitterDescription {
+.socialDescription {
   margin: 0 0 24px;
   font-size: 18px;
   line-height: 1.5;
 }
 
-.twitterButton {
+.socialButton {
   width: 100%;
   border: none;
   border-radius: 999px;

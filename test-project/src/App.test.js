@@ -1,11 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 
-test("renders twitter card", () => {
+test("renders four social cards", () => {
   render(<App />);
-  // eslint-disable-next-line testing-library/no-node-access
-  expect(document.getElementById("twitter-card")).toBeInTheDocument();
-  expect(
-    screen.getByRole("button", { name: /read more/i }),
-  ).toBeInTheDocument();
+
+  expect(screen.getAllByRole("button", { name: /read more/i })).toHaveLength(4);
+  expect(screen.getByText("TWITTER")).toBeInTheDocument();
+  expect(screen.getByText("FACEBOOK")).toBeInTheDocument();
+  expect(screen.getByText("INSTAGRAM")).toBeInTheDocument();
+  expect(screen.getByText("TELEGRAM")).toBeInTheDocument();
 });
